@@ -1,0 +1,1 @@
+proc myproc {a b} { puts "a is $a" puts "b is $b"; return }myproc 1 [list 2 3]; #Incorrect: a is 1, b is {2 3}myproc 1 {2 3}; #Incorrect: a is 1, b is 2myproc 1 2; #Correct: a is 1, b is 2
